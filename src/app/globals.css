@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-merriweather-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-josefin-sans);
+  }
+
+  /* Navigation and header specific text elements */
+  nav, header {
+    font-family: var(--font-josefin-sans);
+  }
+  
+  nav a, header a, nav button, header button {
+    font-family: var(--font-josefin-sans);
+    text-decoration: none !important;
+  }
+
+  /* Remove default link styles for navigation */
+  nav a:link,
+  nav a:visited,
+  header a:link,
+  header a:visited {
+    text-decoration: none !important;
+    color: inherit;
+  }
+
+  /* Ensure no underlines on navigation links */
+  .no-underline {
+    text-decoration: none !important;
+  }
+
+  .no-underline:hover,
+  .no-underline:focus,
+  .no-underline:active,
+  .no-underline:visited {
+    text-decoration: none !important;
+  }
+
+  /* Other elements keep Merriweather Sans */
+  span, p, button, li, input {
+    font-family: var(--font-merriweather-sans);
+  }
+
+  /* Override for navigation elements specifically */
+  nav span, nav p, nav button, nav li,
+  header span, header p, header button, header li {
+    font-family: var(--font-josefin-sans);
+  }
+}
+
+/* Additional utility classes for debugging */
+@layer utilities {
+  .debug-red { border: 2px solid red !important; }
+  .debug-blue { border: 2px solid blue !important; }
+  .debug-green { border: 2px solid green !important; }
+  
+  /* Force no underline utility */
+  .force-no-underline {
+    text-decoration: none !important;
+    border-bottom: none !important;
+  }
+  
+  .force-no-underline:hover,
+  .force-no-underline:focus,
+  .force-no-underline:active,
+  .force-no-underline:visited {
+    text-decoration: none !important;
+    border-bottom: none !important;
+  }
+}
