@@ -43,7 +43,7 @@ export default function MobileMenu({
       return (
         <div key={item.path} className="flex flex-col">
           {/* Main item with dropdown toggle */}
-          <div className="flex items-center w-full">
+          <div className="flex items-center w-full ">
             <Link
               href={item.path}
               onClick={handleMobileLinkClick}
