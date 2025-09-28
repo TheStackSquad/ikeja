@@ -1,8 +1,21 @@
 //src/app/news/page.js
-export default function News() {
+
+import NewsComponents from "@/components/news";
+import { legislativeData } from "@/data/news/legislativeData";
+import { newsData } from "@/data/news/newsData";
+
+const NewsPage = () => {
+  const featuredNews = [...legislativeData, ...newsData][0]; // First news item as featured
+
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">News UI: coming soon</h1>
-    </div>
+    <main>
+      <NewsComponents
+        legislativeNews={legislativeData}
+        generalNews={newsData}
+        featuredNews={featuredNews}
+      />
+    </main>
   );
-}
+};
+
+export default NewsPage;
