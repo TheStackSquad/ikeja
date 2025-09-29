@@ -11,7 +11,7 @@ const achievementsData = {
         title: "Ikeja Streetlight Project",
         category: "Infrastructure & Security",
         icon: "💡",
-        image: "/img/placeholderMan.webp",
+        image: "/img/aboutUI/streetlights.jpg",
         status: "Ongoing",
         description:
           "Deployment of solar-powered streetlights across Ikeja to enhance security and support local businesses.",
@@ -25,7 +25,7 @@ const achievementsData = {
         title: "Empower the Ikeja Child Initiative",
         category: "Education",
         icon: "🎓",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/child.jpg",
         status: "Active",
         description:
           "Comprehensive education program providing free JAMB and GCE coaching, school renovations, and educational support.",
@@ -39,7 +39,7 @@ const achievementsData = {
         title: "Ikeja Women & Youth Empowerment Program",
         category: "Social Development",
         icon: "👥",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/women.jpg",
         status: "Active",
         description:
           "Skills acquisition, microfinance support, and entrepreneurship training for women and youth in Ikeja.",
@@ -53,7 +53,7 @@ const achievementsData = {
         title: "Ikeja Primary Healthcare Revitalization",
         category: "Health Services",
         icon: "🏥",
-        image: "/img/placeholderMan.webp",
+        image: "/img/aboutUI/health.webp",
         status: "Phase 1 Complete",
         description:
           "Upgrading health centers, medical equipment procurement, and community health programs across Ikeja.",
@@ -74,7 +74,7 @@ const achievementsData = {
         id: 5,
         name: "Awolowo Way Rehabilitation",
         type: "Road Construction",
-        image: "/img/placeholderMan.webp",
+        image: "/img/aboutUI/awolowo.webp",
         length: "1.2 km",
         status: "Completed",
         completionDate: "August 2025",
@@ -85,7 +85,7 @@ const achievementsData = {
         id: 6,
         name: "Ikeja Local Government Secretariat Annex",
         type: "Public Building",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/ikeja-house.jpg",
         features: "Modern offices, e-governance center, public service areas",
         status: "Completed",
         completionDate: "September 2025",
@@ -96,7 +96,7 @@ const achievementsData = {
         id: 7,
         name: "Oregun Community Market Renovation",
         type: "Commercial Infrastructure",
-        image: "/img/placeholderMan.webp",
+        image: "/img/aboutUI/market-rehab.jpg",
         features: "Modern stalls, parking, security, waste management systems",
         status: "Ongoing",
         expectedCompletion: "January 2026",
@@ -118,7 +118,7 @@ const achievementsData = {
         participants: "600+ volunteers",
         coverage: "All wards in Ikeja",
         impact: "Enhanced community surveillance and crime prevention.",
-        image: "/img/placeholderMan.webp",
+        image: "/img/aboutUI/cooperation.jpg",
       },
       {
         id: 9,
@@ -128,7 +128,7 @@ const achievementsData = {
         courses:
           "ICT, Fashion Design, Catering, Solar Panel Installation, Electrical works",
         impact: "85% job placement rate, 200+ new businesses launched.",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/skill.jpg",
       },
       {
         id: 10,
@@ -138,7 +138,7 @@ const achievementsData = {
         services: "Free health screenings, social visits, financial support.",
         impact:
           "Improved quality of life and social inclusion for the elderly.",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/elder.jpg",
       },
     ],
   },
@@ -154,7 +154,7 @@ const achievementsData = {
         awardingBody: "Lagos State Government",
         year: "2025",
         category: "Infrastructure",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/infrastructure.png",
         description:
           "Recognition for exceptional infrastructure development and urban renewal in Ikeja.",
       },
@@ -164,7 +164,7 @@ const achievementsData = {
         awardingBody: "Lagos State Ministry of Youth and Social Development",
         year: "2025",
         category: "Leadership",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/power.png",
         description:
           "Outstanding contribution to youth empowerment and skills development programs.",
       },
@@ -174,7 +174,7 @@ const achievementsData = {
         awardingBody: "Association of Local Government Chairmen, Lagos",
         year: "2024",
         category: "Community Development",
-        image: "/img/placeholderFemale.webp",
+        image: "/img/aboutUI/community.svg",
         description:
           "Exceptional community engagement and grassroots development initiatives in Ikeja.",
       },

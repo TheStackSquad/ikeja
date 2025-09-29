@@ -11,7 +11,7 @@ const structureData = {
         title: "Executive Chairman",
         name: "Hon. Dauda Akeem Olalekan",
         department: "Executive Office",
-        image: "/img/chairman.webp",
+        image: "/img/exec.webp",
         responsibilities: [
           "Overall administration and governance",
           "Policy formulation and implementation",
@@ -24,7 +24,7 @@ const structureData = {
         title: "Vice Chairman",
         name: "Hon. Abisola Omisore",
         department: "Executive Office",
-        image: "/img/viceChair.webp",
+        image: "/img/viceChair.jpg",
         responsibilities: [
           "Assists the Chairman in administrative duties",
           "Coordinates departmental activities",

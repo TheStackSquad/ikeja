@@ -58,7 +58,7 @@ const RecognitionsSection = ({ recognitions }) => {
                 alt={`${award.title} award from ${award.awardingBody}`}
                 fill
                 sizes="64px"
-                className="object-cover rounded-full"
+                className="object-contain rounded-full"
                 priority={false}
               />
             </div>

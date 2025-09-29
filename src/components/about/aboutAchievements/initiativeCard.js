@@ -16,7 +16,7 @@ const InitiativeCard = ({ program }) => (
         alt={`${program.title} - ${program.category}`}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-        className="object-cover"
+        className="object-contain"
         priority={false}
       />
     </div>

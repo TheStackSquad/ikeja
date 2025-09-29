@@ -59,7 +59,7 @@ const CommunityProgramsSection = ({ communityPrograms }) => {
                 alt={`${program.title} - ${program.category}`}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover"
+                className="object-contain"
                 priority={false}
               />
             </div>
