@@ -18,7 +18,7 @@ const DepartmentCard = ({ department }) => (
           alt={`${department.head} - Head of ${department.name}`}
           fill
           sizes="40px"
-          className="object-cover"
+          className="object-contain"
           priority={false}
         />
       </div>

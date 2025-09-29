@@ -4,6 +4,7 @@
 import React, { Suspense, useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
+
 // Lazy load components for better performance
 const Overview = React.lazy(() => import("@/components/about/Overview"));
 const Biography = React.lazy(() => import("@/components/about/Biography"));
@@ -12,6 +13,7 @@ const Structure = React.lazy(() => import("@/components/about/Structure"));
 const Achievements = React.lazy(() =>
   import("@/components/about/Achievements")
 );
+
 
 // Simple, performance-friendly animations
 const simpleAnimations = {
@@ -72,7 +74,8 @@ const SimpleAnimatedSection = ({
           observer.unobserve(entry.target); // Only animate once for performance
         }
       },
-      { threshold: 0.1, rootMargin: "50px" }
+      // Keep the fix for mobile performance issue
+      { threshold: 0.1, rootMargin: "500px" }
     );
 
     if (ref.current) {
@@ -176,7 +179,9 @@ export default function AboutPage() {
           }
         });
       },
-      { rootMargin: "0px 0px -50% 0px", threshold: 0 }
+      // Note: This observer is for navigation/active state, which requires a tighter margin
+  
+      { rootMargin: "0px 0px -100px 0px", threshold: 0.15 }
     );
 
     // Observe all sections after a brief delay

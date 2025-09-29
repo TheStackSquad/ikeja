@@ -15,7 +15,7 @@ const PositionCard = ({ position, icon, titleColor }) => (
         src={position.image}
         alt={`${position.name} - ${position.title}`}
         fill
-        sizes="96px"
+        sizes="100px"
         className="object-cover"
         priority={false}
       />
