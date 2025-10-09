@@ -89,7 +89,8 @@ export default function MobileMenu({
                       key={subItem.id}
                       href={subItem.path || `${hrefBase}#${subItem.id}`}
                       onClick={handleMobileLinkClick}
-                      className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 rounded-lg ml-2 my-1"
+                      className="block px-4 py-3 text-sm text-black hover:bg-gray-100 transition-colors
+                      duration-200 rounded-lg ml-2 my-1"
                     >
                       <div className="flex items-center gap-3">
                         <span className="text-base">{subItem.icon}</span>
@@ -110,13 +111,15 @@ export default function MobileMenu({
           key={item.path}
           href={item.path}
           onClick={handleMobileLinkClick}
-          className="block relative group px-4 py-3 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+          className="block relative group px-4 py-3 rounded-lg transition-all
+          duration-300 hover:bg-gray-100"
         >
           <span className="relative z-10 group-hover:text-primary transition-colors duration-300">
             {item.label}
           </span>
           <motion.div
-            className="absolute inset-0 bg-primary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute inset-0 bg-primary/10 rounded-lg opacity-0
+            group-hover:opacity-100 transition-opacity duration-300"
             layoutId="mobileHover"
           />
         </Link>
@@ -128,7 +131,8 @@ export default function MobileMenu({
     <AnimatePresence>
       {menuOpen && (
         <motion.nav
-          className="lg:hidden bg-white dark:bg-dark border-t border-gray-200 dark:border-gray-700 px-4 py-4 space-y-2 font-cinzel text-sm text-gray-700 dark:text-gray-300"
+          className="lg:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-2
+          font-cinzel text-sm text-gray-700"
           initial="hidden"
           animate="visible"
           exit="hidden"
